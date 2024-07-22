@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="com.evy.framework.listeners.ListenerManager"/>
+    </listeners>
+    <test  name="myTests" parallel="methods" thread-count="8">
+        <classes>
+            <class name="com.evy.tests.RegisterTest"/>
+            <class name="com.evy.tests.LoginTest"/>
+            <class name="com.evy.tests.SelectProductCategoriesTest"/>
+            <class name="com.evy.tests.SelectProductByNameTest"/>
+            <class name="com.evy.tests.SelectProductAttributeTest"/>
+            <class name="com.evy.tests.EndToEndTest"/>
+        </classes>
+    </test>
+</suite>
